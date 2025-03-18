@@ -1,0 +1,105 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+    background-color: #A7C7E7; /* Цвет фона в стиле Windows XP */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Окно, имитирующее окно Windows XP */
+.window {
+    background: #3C79E6; /* Синий цвет окна */
+    border: 2px solid #1A57C5; /* Граница окна */
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.window-header {
+    background: linear-gradient(to bottom, #C9D9F1, #3C79E6); /* Градиент для верхней панели */
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 4px 4px 0 0;
+}
+
+.window-title {
+    font-size: 14px;
+}
+
+/* Тело окна */
+.window-body {
+    background-color: #FFFFFF; /* Белый фон */
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Формы и поля ввода */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 12px;
+    color: #333;
+    font-weight: normal;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #A3A3A3;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: #F0F0F0;
+}
+
+input:focus {
+    border-color: #1A57C5; /* Синий цвет при фокусе */
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Кнопки */
+.submit-btn, .cancel-btn {
+    width: 48%;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn {
+    background: linear-gradient(to bottom, #66A9F3, #4A8DD3); /* Градиент для кнопки "Войти" */
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #3579B7; /* Темно-синий при наведении */
+}
+
+.cancel-btn {
+    background: linear-gradient(to bottom, #F5F5F5, #D3D3D3); /* Серый градиент для кнопки "Отмена" */
+    color: #333;
+}
+
+.cancel-btn:hover {
+    background-color: #B3B3B3; /* Темно-серый при наведении */
+}

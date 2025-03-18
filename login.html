@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">Вход в систему</span>
+        </div>
+        <div class="window-body">
+            <form action="https://www.google.ru" method="get"> <!-- Перенаправляем на Google -->
+                <div class="input-group">
+                    <label for="username">Логин:</label>
+                    <input type="text" id="username" name="username" placeholder="Введите логин" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="submit-btn">Войти</button>
+                    <button type="button" class="cancel-btn">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
